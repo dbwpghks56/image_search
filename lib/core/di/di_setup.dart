@@ -14,7 +14,7 @@ void di() {
   getIt.registerCachedFactory<PixabayDetailViewModel>(() {
     return PixabayDetailViewModel(getIt());
   });
-  getIt.registerCachedFactory<SearchPixabayViewModel>(() {
+  getIt.registerFactory<SearchPixabayViewModel>(() {
     return SearchPixabayViewModel(getIt());
   });
 }
