@@ -8,6 +8,7 @@ abstract class Pixabay with _$Pixabay {
     required int id,
     required List<String> tags,
     required String imageUrl,
+    required String largeImageURL,
     required String user,
   }) = _Pixabay;
 }

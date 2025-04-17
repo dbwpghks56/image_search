@@ -9,6 +9,8 @@ class PixabayDto {
   final String? user;
   final String? tags;
   final String? imageUrl;
+  final String? largeImageURL;
+  final String? previewURL;
   final double? imageWidth;
   final double? imageHeiht;
   final double? imageSize;
@@ -19,6 +21,8 @@ class PixabayDto {
     required this.user,
     required this.tags,
     required this.imageUrl,
+    required this.previewURL,
+    required this.largeImageURL,
     required this.imageWidth,
     required this.imageHeiht,
     required this.imageSize,
