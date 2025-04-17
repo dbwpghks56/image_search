@@ -5,8 +5,7 @@ import 'package:image_search/presentaion/detail/screen/pixabay_detail_root.dart'
 import 'package:image_search/presentaion/search/screen/search_pixabay_root.dart';
 import 'package:image_search/presentaion/search/search_pixabay_view_model.dart';
 
-import '../../presentaion/detail/pixabay_detail_view_model.dart'
-    show PixabayDetailViewModel;
+import '../../presentaion/detail/pixabay_detail_view_model.dart';
 
 final router = GoRouter(
   initialLocation: Routes.search,

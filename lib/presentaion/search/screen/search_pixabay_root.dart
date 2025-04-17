@@ -27,7 +27,7 @@ class _SearchPixabayRootState extends State<SearchPixabayRoot> {
   @override
   Widget build(BuildContext context) {
     return ListenableBuilder(
-      listenable: widget.viewModel..findPixabiesByQuery(_controller.text),
+      listenable: widget.viewModel,
       builder: (context, _) {
         return SearchPixabayScreen(
           state: widget.viewModel.value,
