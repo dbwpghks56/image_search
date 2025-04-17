@@ -11,10 +11,10 @@ final getIt = GetIt.instance;
 void di() {
   getIt.registerSingleton<PixabayDataSource>(PixabayDataSourceImpl());
   getIt.registerSingleton<PixabayRespository>(PixabayRepositoryImpl(getIt()));
-  getIt.registerCachedFactory<PixabayDetailViewModel>(() {
+  getIt.registerFactory<PixabayDetailViewModel>(() {
     return PixabayDetailViewModel(getIt());
   });
-  getIt.registerFactory<SearchPixabayViewModel>(() {
+  getIt.registerCachedFactory<SearchPixabayViewModel>(() {
     return SearchPixabayViewModel(getIt());
   });
 }
